@@ -44,7 +44,7 @@
 
             // Remove the trailing comma
             extractedIDs = extractedIDs.slice(0, -1);
-            extractedIDs = `http://www.youtube.com/playlist?video_ids=${extractedIDs}`
+            extractedIDs = `http://www.youtube.com/watch_videos?video_ids=${extractedIDs}`
             document.getElementById("result").textContent = extractedIDs;
             playlistLinkBtn.href = extractedIDs
             playlistLinkBtn.textContent = "open playlist in another tab"
